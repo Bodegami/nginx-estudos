@@ -1,0 +1,5 @@
+nginx -h === help dos comandos
+
+ vim /etc/nginx/nginx.conf == edita o arquivo principal de configuracao. (apenas para questoes de tunning)
+
+/usr/share/nginx/html == rota dos arquivos .conf

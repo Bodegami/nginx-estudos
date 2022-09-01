@@ -1,0 +1,5 @@
+FROM nginx
+
+VOLUME [ "./server:/etc/nginx/nginx.conf" ] 
+
+COPY source /usr/share/nginx/html
