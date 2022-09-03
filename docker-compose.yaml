@@ -8,8 +8,9 @@ services:
       hostname: nginx
       volumes:
         - "./html:/var/www/html/"
-        - "./servers:/etc/nginx/conf.d/servers"
+        - "./servers:/etc/nginx/conf.d/"
       ports:
         - "80:80"
+        - "70:70"
         - "8080:8080"
         - "8888:8888"
