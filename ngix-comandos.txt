@@ -4,6 +4,15 @@ nginx -s reload == carrega as novas atualizacoes
 
 nginx -t == verifica se o arquivo nginx.conf está correto.
 
+
+
+
+
+
+
 vim /etc/nginx/nginx.conf == edita o arquivo principal de configuracao. (apenas para questoes de tunning)
 
 /usr/share/nginx/html == rota dos arquivos .conf
+
+para devolver uma pagina especifica de erro, usamos o comando no arquivo de conf.:
+error_page 404 400 401 /erro.html
