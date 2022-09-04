@@ -1,12 +1,16 @@
-nginx -h === help dos comandos
+# COMANDOS NGINX:
 
-nginx -s reload == carrega as novas atualizacoes
+    nginx -h === help dos comandos
 
-nginx -t == verifica se o arquivo nginx.conf está correto.
+    nginx -s reload == carrega as novas atualizacoes
+
+    nginx -t == verifica se o arquivo nginx.conf está correto.
 
 
 
 
+
+# DICAS:
 
 
 
@@ -16,3 +20,22 @@ vim /etc/nginx/nginx.conf == edita o arquivo principal de configuracao. (apenas 
 
 para devolver uma pagina especifica de erro, usamos o comando no arquivo de conf.:
 error_page 404 400 401 /erro.html
+
+
+# PROXY REVERSE
+
+1 - Criamos um arquivo .conf
+2 - indicamos a porta que ele deve escutar
+3 - criamos o bloco de location correspondente
+4 - adicionamos o comando proxy_pass <endpoint_a_ser_redirecionado_e_porta>
+5 - Exemplo: 
+        server {
+            listen           8080;
+            listen      [::]:8080;
+            server_name localhost;
+        
+            location / {
+                proxy_pass http://localhost:80;   
+            }
+        }
+6 - recarregamos os arquivos de configuracao e pronto.
