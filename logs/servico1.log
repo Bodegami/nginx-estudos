@@ -2,3 +2,7 @@
 127.0.0.1 - - [07/Sep/2022:21:50:48 +0000] "GET / HTTP/1.0" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
 127.0.0.1 - - [07/Sep/2022:21:50:59 +0000] "GET / HTTP/1.0" 200 26 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
 127.0.0.1 - - [07/Sep/2022:21:50:59 +0000] "GET /favicon.ico HTTP/1.0" 404 43 "http://localhost:8003/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"
+Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:11:04 +0000], Request: "GET / HTTP/1.0", Status: 304, Referer: "-" 
+Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:14:17 +0000], Request: "GET / HTTP/1.0", Status: 304
+Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:15:37 +0000], Request: "GET / HTTP/1.0", Status: 304
+Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:16:01 +0000], Request: "GET / HTTP/1.0", Status: 304
