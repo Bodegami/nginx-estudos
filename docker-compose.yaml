@@ -11,6 +11,7 @@ services:
         - ./html:/usr/share/nginx/html
         - ./templates/nginx.conf:/etc/nginx/nginx.conf
         - ./servers:/etc/nginx/modules-enabled/
+        - ./logs:/usr/share/nginx/logs
       ports:
         - "80:80"
         - "8001:8001"
