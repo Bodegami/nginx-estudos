@@ -1,9 +1,0 @@
-FROM nginx
-
-RUN apt-get update && \
-    apt-get install vim -y   
-
-VOLUME [ "/servers:/etc/nginx/conf.d/" ] 
-VOLUME [ "/html:/var/www/html/" ]
-
-COPY source /usr/share/nginx/html

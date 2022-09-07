@@ -3,14 +3,29 @@ version: '3'
 services:
 
     web:
-      image: nginx
+      image: nginx:1.17.10
       container_name: nginx
       hostname: nginx
+      #command: chown -R nginx:nginx /var/lib/nginx
       volumes:
-        - "./html:/var/www/html/"
-        - "./servers:/etc/nginx/conf.d/"
+      #  - "./html:/var/www/html/"
+        - ./templates/nginx.conf:/etc/nginx/nginx.conf
       ports:
         - "80:80"
-        - "70:70"
-        - "8080:8080"
-        - "8888:8888"
+      networks:
+        - node-teste
+      depends_on:
+        - laravel
+
+    laravel:
+      image: devbode/laravel
+      hostname: laravel
+      container_name: laravel
+      ports:
+        - "8000:80"
+      networks:
+        - node-teste
+
+networks:
+  node-teste:
+    driver: bridge
