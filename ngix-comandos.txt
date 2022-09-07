@@ -6,6 +6,8 @@
 
     nginx -t == verifica se o arquivo nginx.conf está correto.
 
+    tail -f /usr/share/nginx/logs/load-balancer.log == fica ouvindo o arquivo e printa a qualquer atualizacao
+
 
 
 
@@ -41,3 +43,19 @@ echo "Servico 1" > /usr/nginx/html/index.html == cria um arquivo index.html com 
             }
         }
 6 - recarregamos os arquivos de configuracao e pronto.
+
+# CRIANDO UM LOAD BALANCER
+
+1 - Criamos um arquivo .conf
+2 - criamos um bloco chamado upstream "nome_do_load_balancer"
+3 - adicionamos dentro do bloco quais o servidor(es) ele deve ouvir
+4 - depois criamos um bloco server
+5 - indicamos dentro do bloco o nome do servidor e a porta que ele deve ouvir.
+6 - recarregamos as configuracoes do nginx
+7 - exemplo: 
+            upstream servicos {
+                server localhost:8001;
+                server localhost:8002;
+            }
+            server {...}
+
