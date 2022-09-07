@@ -24,18 +24,10 @@ error_page 404 400 401 /erro.html
 
 # PROXY REVERSE
 
-1 - Criamos um arquivo .conf
-2 - indicamos a porta que ele deve escutar
-3 - criamos o bloco de location correspondente
-4 - adicionamos o comando proxy_pass <endpoint_a_ser_redirecionado_e_porta>
-5 - Exemplo: 
-        server {
-            listen           8080;
-            listen      [::]:8080;
-            server_name localhost;
-        
-            location / {
-                proxy_pass http://localhost:80;   
-            }
-        }
-6 - recarregamos os arquivos de configuracao e pronto.
+ 1 - Criamos um bloco "server" no arquivo nginx.conf
+ 2 - Indicamos dentro deste bloco a porta e o nome do servidor
+ 3 - Criamos um bloco location dentro do server
+ 4 - Setamos a variavel proxy_pass apontando para "http://{nome_container}:{porta_container}"
+ 5 - Devemos fazer o bind da porta do nginx e da aplicacao no docker-compose
+ 6 - Devemos adiciona-los na mesma network no docker-compose
+ 7 - Utilize de exemplo o arquivo "nginx.conf" e "docker-compose" deste projeto.
