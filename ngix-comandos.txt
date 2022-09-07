@@ -21,6 +21,8 @@ vim /etc/nginx/nginx.conf == edita o arquivo principal de configuracao. (apenas 
 para devolver uma pagina especifica de erro, usamos o comando no arquivo de conf.:
 error_page 404 400 401 /erro.html
 
+echo "Servico 1" > /usr/nginx/html/index.html == cria um arquivo index.html com o a String informada.
+
 
 # PROXY REVERSE
 
