@@ -6,3 +6,9 @@ Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:11:04 +0000], Request: "GET / HTTP
 Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:14:17 +0000], Request: "GET / HTTP/1.0", Status: 304
 Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:15:37 +0000], Request: "GET / HTTP/1.0", Status: 304
 Remote Addr: 127.0.0.1, Time: [07/Sep/2022:23:16:01 +0000], Request: "GET / HTTP/1.0", Status: 304
+Remote Addr: -, Time: [07/Sep/2022:23:25:16 +0000], Request: "GET / HTTP/1.1", Status: 304
+Remote Addr: -, Time: [07/Sep/2022:23:25:18 +0000], Request: "GET / HTTP/1.0", Status: 304
+Remote Addr: 172.19.0.1, Time: [07/Sep/2022:23:25:25 +0000], Request: "GET / HTTP/1.0", Status: 304
+Remote Addr: -, Time: [07/Sep/2022:23:28:02 +0000], Request: "GET / HTTP/1.1", Status: 304
+Remote Addr: -, Time: [07/Sep/2022:23:28:05 +0000], Request: "GET / HTTP/1.0", Status: 304
+Remote Addr: -, Time: [07/Sep/2022:23:44:19 +0000], Request: "GET / HTTP/1.0", Status: 304
